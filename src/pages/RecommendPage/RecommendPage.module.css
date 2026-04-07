@@ -1,0 +1,14 @@
+.recommendedPage {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .recommendedPage {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+}
