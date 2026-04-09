@@ -1,0 +1,33 @@
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.logo:hover {
+  color: var(--primary-color-grey);
+}
+
+.logosvg {
+  margin-right: 4px;
+}
+.logoText {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 768px) {
+  .logoText {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .logoText {
+    display: none;
+  }
+
+  .logoIcon {
+    width: 28px;
+    height: 20px;
+  }
+}
