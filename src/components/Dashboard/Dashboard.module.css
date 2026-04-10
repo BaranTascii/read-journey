@@ -1,0 +1,705 @@
+.dashboard {
+  width: 353px;
+  flex-shrink: 0;
+  background-color: var(--secondary-color-3);
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sectionTitle {
+  align-self: flex-start;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  margin-left: 14px;
+  text-align: start;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+}
+
+.innerLabel {
+  padding: 0.75rem 0 0.75rem 0.75rem;
+  color: #686868;
+  font-size: 1rem;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+.filtersSection {
+  margin-bottom: 32px;
+}
+
+.filtersForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.filtersFormLibraryView {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 58px;
+}
+.filtersFormReadingView {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.inputGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputField {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--secondary-color-2);
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.inputField input[type="text"][name="pages"] {
+  max-width: 100%;
+  min-width: 0;
+}
+.inputLabel {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input {
+  flex: 1;
+  padding: 16px 15px 16px 0px;
+  background-color: transparent;
+  border: none;
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.input::placeholder {
+  color: var(--primary-text-color);
+}
+
+.input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.inputReading {
+  flex: 1;
+  padding: 16px 15px 16px 15px;
+  background-color: transparent;
+  border: none;
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.applyButton {
+  width: 122px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  color: var(--primary-text-color);
+  border-radius: 30px;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  align-self: flex-start;
+  margin-top: 12px;
+  transition: background-color 0.3s;
+}
+.readingButton {
+  width: 122px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  color: var(--primary-text-color);
+  border-radius: 30px;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.3s;
+  margin-bottom: 40px;
+}
+.readingButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.applyButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.startWorkout {
+  max-width: 100%;
+
+  padding: 20px;
+  border-radius: 12px;
+  background-color: var(--secondary-color-2);
+}
+
+.workoutStep {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.sectionTitleSecond {
+  text-align: start;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  margin-bottom: 40px;
+}
+.sectionTitleSecondLibrary {
+  text-align: start;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  margin-bottom: 0;
+}
+.stepNumber {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: var(--secondary-color-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  flex-shrink: 0;
+}
+.steps {
+  padding-right: 8px;
+}
+.stepContent {
+  text-align: start;
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+}
+
+.stepHighlight {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--primary-color-grey);
+}
+
+.libraryLink {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  color: var(--primary-color-grey);
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  margin-top: 16px;
+}
+
+.quoteSection {
+  background-color: var(--secondary-color-2);
+  border-radius: 12px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.quoteImage {
+  width: 40px;
+  height: 40px;
+}
+
+.quoteIcon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote {
+  text-align: start;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--primary-color-grey);
+  flex: 1;
+}
+.highlight {
+  color: var(--primary-text-color);
+  font-weight: 500;
+}
+.viewAllButton {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(249, 249, 249, 0.2);
+  border-radius: 30px;
+  padding: 12px;
+  color: var(--primary-text-color);
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background-color 0.3s;
+}
+
+.viewAllButton:hover {
+  background-color: var(--secondary-color-2);
+}
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+  z-index: 1000;
+  animation: slideIn 0.3s ease;
+}
+.recommendedSection {
+  background-color: var(--secondary-color-2);
+  border-radius: 12px;
+  padding: 20px;
+}
+.success {
+  background-color: #43a047;
+  color: white;
+}
+
+.error {
+  background-color: #e53935;
+  color: white;
+  margin-top: 6px;
+  font-size: 12px;
+  padding-left: 14px;
+}
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  background-color: var(--secondary-color-2);
+  border: none;
+  border-radius: 12px;
+}
+
+.inputContainerError {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--secondary-color-2);
+  border: 1px solid #ff4d4f;
+  border-radius: 12px;
+}
+
+.inputContainerSuccess {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--secondary-color-2);
+  border: 1px solid #52c41a;
+  border-radius: 12px;
+}
+
+.statusIcon {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showPasswordBtnWithStatus {
+  right: 40px;
+}
+
+.errorMessage {
+  color: #ff4d4f;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.successMessage {
+  color: #52c41a;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+.closeNotification {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 16px;
+}
+.successModal {
+  padding: 2rem;
+  text-align: center;
+}
+.progressSection {
+}
+.progressTitle {
+  text-align: start;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  margin-bottom: 14px;
+}
+.progressText {
+  text-align: start;
+  color: var(--primary-color-grey);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  margin-bottom: 60px;
+}
+.progressTextNew {
+  width: 310px;
+  text-align: start;
+  color: var(--primary-color-grey);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  margin-bottom: 20px;
+}
+.starImage {
+  height: 50px;
+  width: 50px;
+}
+.starIconWrapper {
+  border-width: 0px;
+  border: solid #262626;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  fill: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.starContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.statisticsContent {
+  border-radius: 12px;
+  background-color: var(--secondary-color-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.progressCircleContainer {
+  position: relative;
+  width: 240px;
+  height: 240px;
+}
+
+.progressCircleSvg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.viewButtons {
+  display: flex;
+}
+.progressContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.percentage {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.secondaryProgress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secondaryPercentage {
+  font-size: 16px;
+  color: #3cbf3c;
+  margin-bottom: 5px;
+}
+
+.pagesRead {
+  font-size: 14px;
+  color: var(--primary-color-grey);
+}
+.toggleButton {
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.toggleButton svg {
+  width: 20px;
+  height: 20px;
+  color: #686868;
+  transition: fill 0.3s ease;
+}
+
+.toggleButton:hover {
+  background-color: rgba(75, 85, 99, 0.1);
+}
+
+.toggleButton.active svg {
+  fill: var(--primary-color-blue);
+}
+.viewToggle {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.3s ease;
+  gap: 8px;
+}
+.diaryContent {
+  background-color: var(--secondary-color-2);
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  position: relative;
+}
+
+.diaryEntry {
+  padding: 20px 20px 0px 20px;
+  background-color: var(--secondary-color-2);
+  border-radius: 12px;
+}
+
+.entryContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.entryDate {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.entryDateText {
+  gap: 10px;
+  align-items: center;
+  display: flex;
+}
+.pageCount {
+  color: rgba(255, 255, 255, 0.5);
+}
+.detailsRow {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.entryDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.percentage {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+}
+.imgAndButton {
+  gap: 8px;
+  margin-left: auto;
+  display: flex;
+}
+.readingTime {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+}
+
+.readingSpeed {
+  width: 65px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+}
+
+.deleteButton {
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.readingSpeedSvg {
+  width: 60px;
+  height: 25px;
+}
+.deleteIcon {
+  fill: transparent;
+  width: 26px;
+  height: 26px;
+  color: #686868;
+  border-radius: 4px;
+}
+.readingDashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.latestentryDate {
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
+.lastEntry {
+  color: red;
+}
+
+.entryDate {
+  position: relative;
+  color: var(--primary-color-grey);
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 112%;
+}
+.headeRow {
+  position: relative;
+}
+.diaryContent::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 99%;
+  background-color: var(--secondary-color-3);
+  left: 32px;
+  top: 1px;
+}
+.formReading {
+  flex-direction: column;
+  display: flex;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .formReading {
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionTitle {
+    align-self: flex-start;
+    margin-bottom: 8px;
+  }
+  .progressSwitcher {
+    width: 100%;
+  }
+  .diaryContent {
+    width: 100%;
+  }
+  .progressTextNew {
+    display: none;
+  }
+  .readingDashboard {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .progressText {
+    font-size: 13px;
+  }
+  .dashboard {
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+  }
+  .quoteSection {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .dashboard {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 540px) {
+  .readingDashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
