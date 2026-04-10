@@ -1,0 +1,134 @@
+.recommendedBooks {
+  padding: 40px 40px 28px 40px;
+  background-color: var(--secondary-color-3);
+  border-radius: 30px;
+  flex: 1;
+}
+.recommendedBooksLibraryView {
+  background-color: transparent;
+  padding: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 114%;
+  color: var(--primary-text-color);
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+}
+
+.paginationButton {
+  border: 1px solid rgba(249, 249, 249, 0.2);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1e1e1e;
+
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.paginationButton:hover:not(:disabled) {
+  background-color: #333;
+}
+
+.paginationButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.booksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+  gap: 20px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: rgba(255, 255, 255, 0.878);
+  font-size: 18px;
+}
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: var(--secondary-color-2);
+  border-radius: 20px;
+  margin-top: 20px;
+  min-height: 200px;
+}
+
+.emptyStateIcon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.emptyStateTitle {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #c2b8b8;
+}
+
+.emptyStateText {
+  font-size: 16px;
+  color: var(--primary-text-color);
+  max-width: 300px;
+}
+.libraryGrid {
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 12px;
+}
+@media (max-width: 768px) {
+  .booksGrid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 16px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+  .libraryGrid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  }
+}
+@media (max-width: 375px) {
+  .booksGrid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+
+    gap: 21px;
+  }
+  .libraryGrid {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  }
+  .title {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .paginationButton {
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+  }
+}

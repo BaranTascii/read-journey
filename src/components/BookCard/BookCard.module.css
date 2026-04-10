@@ -1,0 +1,97 @@
+.bookCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 150%;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: transform 0.3s;
+}
+
+.imageContainer:hover {
+  transform: scale(1.03);
+}
+
+.bookCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.bookInfo {
+  text-align: start;
+  padding: 4px;
+}
+
+.bookTitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--primary-text-color);
+  margin: 0 0 4px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bookAuthor {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--primary-color-grey);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bookTitleLibraryView {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 120%;
+}
+.bookAuthorLibraryView {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 120%;
+}
+@media (max-width: 375px) {
+}
+.deleteButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(232, 80, 80, 0.1);
+  border-width: 0;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  z-index: 10;
+}
+.bookInfoContainer {
+  display: flex;
+  flex-direction: row;
+}
+.deleteButton:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.deleteSvg {
+  fill: transparent;
+  color: #e85050;
+  width: 30px;
+  height: 30px;
+}
