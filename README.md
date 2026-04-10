@@ -1,16 +1,111 @@
-# React + Vite
+#  Read Journey
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern reading tracker application that allows users to manage their reading journey, discover books, and track their progress in an intuitive and user-friendly interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Features
 
-## React Compiler
+*  User authentication (Register / Login)
+*  Personal library management
+*  Recommended books system
+*  Reading progress tracking
+*  Book browsing and interaction
+*  State management with Redux Toolkit
+*  API integration for dynamic data
+*  Fast and responsive UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+##  Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+
+* React
+* Vite
+* JavaScript (ES6+)
+* CSS
+
+### State Management
+
+* Redux Toolkit
+
+### API
+
+* REST API (Axios / Fetch)
+
+---
+
+##  Project Structure
+
+```bash
+src/
+ ├── components/     # Reusable UI components
+ ├── pages/          # Application pages
+ ├── redux/          # State management (auth & books)
+ ├── utils/          # API & helper functions
+ ├── main.jsx        # Entry point
+```
+
+---
+
+##  Installation
+
+```bash
+git clone https://github.com/your-username/read-journey.git
+cd read-journey
+npm install
+npm run dev
+```
+
+---
+
+##  Authentication Flow
+
+* Users can register and log in
+* Protected routes prevent unauthorized access
+* Authentication state is managed globally with Redux
+
+---
+
+##  State Management
+
+Redux Toolkit is used for:
+
+* Managing authentication state
+* Handling book data
+* Performing async API operations
+
+---
+
+##  API Integration
+
+* Centralized API configuration
+* Async requests handled via Redux operations
+* Loading and error states managed properly
+
+---
+
+##  Purpose
+
+This project was rebuilt from scratch to:
+
+* Understand real-world React architecture
+* Practice Redux Toolkit
+* Learn scalable project structure
+* Improve frontend development skills
+
+---
+
+##  Future Improvements
+
+*  Mobile responsiveness
+*  Notification system
+*  Reading analytics
+
+---
+
+## 👨 Author
+
+GitHub: https://github.com/BaranTascii
+

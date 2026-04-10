@@ -1,5 +1,5 @@
 import { useEffect, Suspense, lazy } from "react";
-import "./App.module.css";
+import "./App.css";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { selectIsRefreshing, selectToken } from "../../redux/auth/selectors";
