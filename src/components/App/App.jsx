@@ -15,7 +15,7 @@ const RegisterPage = lazy(
 );
 const LoginPage = lazy(() => import("../../pages/LoginPage/LoginPage"));
 const RecommendedPage = lazy(
-  () => import("../../pages/RecommendPage/RecommendPage"),
+  () => import("../../pages/RecommendedPage/RecommendedPage"),
 );
 const MyLibraryPage = lazy(
   () => import("../../pages/MyLibraryPage/MyLibraryPage"),
