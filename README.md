@@ -108,4 +108,3 @@ This project was rebuilt from scratch to:
 ## 👨 Author
 
 GitHub: https://github.com/BaranTascii
-
