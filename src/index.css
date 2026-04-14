@@ -16,10 +16,6 @@
   --secondary-color-3: #1f1f1f;
 
   --font-family: "Gilroy-Regular", sans-serif;
-  /* Breakpoints */
-  --breakpoint-mobile: 320px;
-  --breakpoint-tablet: 768px;
-  --breakpoint-desktop: 1440px;
 
   --spacing-base: 14px;
   --font-size-base: 14px;
@@ -110,7 +106,7 @@ input[type="file"] {
 input {
   background-color: transparent;
 }
-@media (min-width: 375px) and (max-width: 767px) {
+@media (max-width: 767px) {
   :root {
     --font-size-base: 8px;
   }
